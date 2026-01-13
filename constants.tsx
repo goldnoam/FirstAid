@@ -66,7 +66,7 @@ export const UI_TRANSLATIONS: Record<Language, UIStrings> = {
     general: 'General'
   },
   zh: { emergencyCall: '紧急', rescueOrg: '联合救援', shareApp: '分享', mainTitle: '急救指南', mainSubtitle: '专业知识', importantNote: '注意', importantNoteDesc: '仅供教育', tabProcedures: '指南', tabNumbers: '号码', searchPlaceholder: '搜索...', searchNumbersPlaceholder: '搜索号码...', noResults: '无结果', clearSearch: '清除', stepsTitle: '步骤:', tipsTitle: '提示:', shareGuide: '分享', closeGuide: '关闭', warningTitle: '警告:', footerQuote: '救人一命胜造七级浮屠', footerRights: '(C) Noam Gold AI 2026', feedback: '反馈', copiedToast: '已复制', scrollToTop: '顶部', fontSize: '字体', speak: '朗读', themeToggle: '主题', all: '全部', urgent: '紧急', injury: '受伤', general: '常规' },
-  hi: { emergencyCall: 'आपातकाल', rescueOrg: 'यूनाइटेड हत्ज़ला', shareApp: 'साझा', mainTitle: 'प्राथमिक उपचार', mainSubtitle: 'पेशेवर मार्गदर्शन', importantNote: 'नोट', importantNoteDesc: 'केवल शैक्षिक', tabProcedures: 'गाइड', tabNumbers: 'नंबर', searchPlaceholder: 'खोजें...', searchNumbersPlaceholder: 'नंबर खोजें...', noResults: 'कोई परिणाम नहीं', clearSearch: 'साफ़', stepsTitle: 'चरण:', tipsTitle: 'सुझाव:', shareGuide: 'साझा', closeGuide: 'बंद', warningTitle: 'चेतावनी:', footerQuote: 'एक जीवन बचाना पूरी दुनिया बचाने जैसा है', footerRights: '(C) Noam Gold AI 2026', feedback: 'प्रतिक्रिया', copiedToast: 'कॉपी', scrollToTop: 'ऊपर', fontSize: 'फ़ॉन्ट', speak: 'बोलें', themeToggle: 'थीם', all: 'सब', urgent: 'अत्यावश्यक', injury: 'चוט', general: 'सामान्य' },
+  hi: { emergencyCall: 'आपातकाल', rescueOrg: 'यूनाइटेड हत्ज़ला', shareApp: 'साझा', mainTitle: 'प्राथमिक उपचार', mainSubtitle: 'पेशेवर मार्गदर्शन', importantNote: 'नोट', importantNoteDesc: 'केवल शैक्षिक', tabProcedures: 'गाइड', tabNumbers: 'नंबर', searchPlaceholder: 'खोजें...', searchNumbersPlaceholder: 'नंबर खोजें...', noResults: 'कोई परिणाम नहीं', clearSearch: 'साफ़', stepsTitle: 'चरण:', tipsTitle: 'सुझाव:', shareGuide: 'साझा', closeGuide: 'बंद', warningTitle: 'चेतावनी:', footerQuote: 'एक जीवन बचाना पूरी दुनिया बचाने जैसा है', footerRights: '(C) Noam Gold AI 2026', feedback: 'प्रतिक्रिया', copiedToast: 'कॉपी', scrollToTop: 'ऊपर', fontSize: 'फ़ॉन्ट', speak: 'बोलें', themeToggle: 'थीम', all: 'सब', urgent: 'अत्यावश्यक', injury: 'चוט', general: 'सामान्य' },
   de: { emergencyCall: 'Notruf', rescueOrg: 'Hatzalah', shareApp: 'Teilen', mainTitle: 'Erste Hilfe', mainSubtitle: 'Profi-Guide', importantNote: 'Wichtig', importantNoteDesc: 'Nur Bildung', tabProcedures: 'Anleitungen', tabNumbers: 'Nummern', searchPlaceholder: 'Suchen...', searchNumbersPlaceholder: 'Suchen...', noResults: 'Keine Ergebnisse', clearSearch: 'Löschen', stepsTitle: 'Schritte:', tipsTitle: 'Tipps:', shareGuide: 'Teilen', closeGuide: 'Schließen', warningTitle: 'Warnung:', footerQuote: 'Wer ein Leben rettet, rettet die Welt', footerRights: '(C) Noam Gold AI 2026', feedback: 'Feedback', copiedToast: 'Kopiert', scrollToTop: 'Oben', fontSize: 'Schrift', speak: 'Lesen', themeToggle: 'Thema', all: 'Alle', urgent: 'Dringend', injury: 'Verletzung', general: 'Allgemein' },
   es: { emergencyCall: 'Emergencia', rescueOrg: 'Hatzalah', shareApp: 'Compartir', mainTitle: 'Primeros Auxilios', mainSubtitle: 'Guía profesional', importantNote: 'Nota', importantNoteDesc: 'Solo educación', tabProcedures: 'Guías', tabNumbers: 'Números', searchPlaceholder: 'Buscar...', searchNumbersPlaceholder: 'Buscar...', noResults: 'Sin resultados', clearSearch: 'Limpiar', stepsTitle: 'Pasos:', tipsTitle: 'Consejos:', shareGuide: 'Compartir', closeGuide: 'Cerrar', warningTitle: 'Aviso:', footerQuote: 'Quien salva una vida salva al mundo', footerRights: '(C) Noam Gold AI 2026', feedback: 'Feedback', copiedToast: 'Copiado', scrollToTop: 'Subir', fontSize: 'Fuente', speak: 'Leer', themeToggle: 'Tema', all: 'Todo', urgent: 'Urgente', injury: 'Lesión', general: 'General' },
   fr: { emergencyCall: 'Urgence', rescueOrg: 'Hatzalah', shareApp: 'Partager', mainTitle: 'Premiers Secours', mainSubtitle: 'Guide pro', importantNote: 'Note', importantNoteDesc: 'Éducation seulement', tabProcedures: 'Guides', tabNumbers: 'Numéros', searchPlaceholder: 'Chercher...', searchNumbersPlaceholder: 'Chercher...', noResults: 'Aucun résultat', clearSearch: 'Effacer', stepsTitle: 'Étapes:', tipsTitle: 'Conseils:', shareGuide: 'Partager', closeGuide: 'Fermer', warningTitle: 'Alerte:', footerQuote: 'Sauver une vie, c\'est sauver le monde', footerRights: '(C) Noam Gold AI 2026', feedback: 'Feedback', copiedToast: 'Copié', scrollToTop: 'Haut', fontSize: 'Police', speak: 'Lire', themeToggle: 'Thème', all: 'Tout', urgent: 'Urgent', injury: 'Blessure', general: 'Général' }
@@ -145,25 +145,25 @@ const baseProcedures: Procedure[] = [
     }
   },
   {
-    id: 'animal_bite',
-    title: 'נשיכת בעל חיים',
-    icon: '🐕',
+    id: 'allergic_reaction',
+    title: 'תגובה אלרגית (אנפילקסיס)',
+    icon: '🥜',
     category: 'urgent',
-    shortDesc: 'טיפול בנשיכות כלבים, חתולים או חיות בר.',
+    shortDesc: 'תגובה חריפה של הגוף לחשיפה לאלרגן (מזון, עקיצה, תרופה).',
     steps: [
-      'שטיפה: שטוף במים וסבון למשך 15 דקות לפחות.',
-      'חיטוי: חטא את האזור בתמיסת חיטוי.',
-      'חבישה: כסה בתחבושת נקייה.',
-      'פינוי: פנה למרפאה לבדיקת טטנוס וכלבת.'
+      'זיהוי: קוצר נשימה, נפיחות בפנים, פריחה או חולשה.',
+      'קריאה ל-101: הזעק עזרה מיד.',
+      'אפיפן: אם קיים מזרק, השתמש בו מייד בירך החיצונית.',
+      'ניטור: השאר את הנפגע בישיבה/שכיבה ונטר נשימה.',
+      'מזרק שני: אם אין שיפור תוך 5 דקות, השתמש במזרק נוסף.'
     ],
-    tips: ['נסה לתעד את פרטי בעלי החיים.'],
+    tips: ['הזרקה למשך 10 שניות לתוך השריר.', 'אל תמתין להגעת אמבולנס לפני הזרקה.'],
     visuals: {
       type: 'diagram',
-      title: 'שלבי טיפול ראשוני בנשיכה',
+      title: 'מיקום הזרקת אפיפן',
       items: [
-        { label: 'ניקוי יסודי במים וסבון', icon: '🚿', color: '#3b82f6' },
-        { label: 'עצירת דימום בלחץ ישיר', icon: '🩹', color: '#ef4444' },
-        { label: 'פנייה דחופה לטיפול רפואי', icon: '🏥', color: '#10b981' }
+        { label: 'ירך חיצונית (מרכז השריר)', color: '#3b82f6', icon: '💉' },
+        { label: 'אחיזה בטיחותית', color: '#10b981', icon: '✊' }
       ]
     }
   },
@@ -211,6 +211,142 @@ const baseProcedures: Procedure[] = [
         { label: 'Ice - קירור (20 דק\')', color: '#60a5fa', icon: '🧊' },
         { label: 'Comp - חבישה אלסטית', color: '#3b82f6', icon: '🩹' },
         { label: 'Elev - הגבהת האיבר', color: '#2563eb', icon: '🔼' }
+      ]
+    }
+  },
+  {
+    id: 'bruise',
+    title: 'חבורה (סימן כחול)',
+    icon: '🤕',
+    category: 'injury',
+    shortDesc: 'דימום תת-עורי כתוצאה ממכה יבשה.',
+    steps: [
+      'קירור: הנח קומפרס קר מייד לאחר המכה.',
+      'הגבהה: הרם את האיבר להפחתת הנפיחות.',
+      'מנוחה: מנע מאמץ מהאזור הפגוע.'
+    ],
+    tips: ['הקרח עוזר לכיווץ כלי דם ולצמצום שטף הדם.'],
+    visuals: {
+      type: 'icon-list',
+      title: 'טיפול בחבורה',
+      items: [
+        { label: 'קומפרס קר מהיר', icon: '❄️' },
+        { label: 'הגבהת האזור', icon: '🛋️' }
+      ]
+    }
+  },
+  {
+    id: 'poisoning',
+    title: 'הרעלה',
+    icon: '🧪',
+    category: 'urgent',
+    shortDesc: 'בליעה או שאיפה של חומרים רעילים.',
+    steps: [
+      'זיהוי החומר: נסה להבין מה הנפגע בלע/שאף.',
+      'קריאה ל-101: דווח על סוג החומר וכמותו.',
+      'איסור הקאה: אל תנסה לגרום לנפגע להקיא.',
+      'שטיפה: אם החומר על העור, שטוף במים זורמים.'
+    ],
+    tips: ['קח את אריזת החומר לבית החולים.', 'התקשר למרכז ההרעלות לקבלת הנחיות.'],
+    visuals: {
+      type: 'icon-list',
+      title: 'דגשי בטיחות בהרעלה',
+      items: [
+        { label: 'אל תגרום להקאה', icon: '🚫' },
+        { label: 'שמור את האריזה', icon: '📦' },
+        { label: 'אוורור המקום', icon: '🌬️' }
+      ]
+    }
+  },
+  {
+    id: 'electric_shock',
+    title: 'התחשמלות',
+    icon: '⚡',
+    category: 'urgent',
+    shortDesc: 'פגיעה מזרם חשמלי.',
+    steps: [
+      'בטיחות: אל תיגע בנפגע כל עוד הוא מחובר לחשמל.',
+      'ניתוק: נתק את זרם החשמל הראשי (פיוז).',
+      'הרחקה: השתמש בחפץ מבודד (עץ/פלסטיק) להרחקת הנפגע.',
+      'החייאה: אם הנפגע ללא דופק/נשימה, התחל CPR מייד.'
+    ],
+    tips: ['פנה לבדיקת לב גם אם הנפגע מרגיש טוב.', 'חשד לנזק פנימי.'],
+    visuals: {
+      type: 'icon-list',
+      title: 'סדר פעולות',
+      items: [
+        { label: 'ניתוק זרם ראשי', icon: '🔌' },
+        { label: 'חפץ מבודד להרחקה', icon: '🪵' },
+        { label: 'בדיקת הכרה ונשימה', icon: '❤️' }
+      ]
+    }
+  },
+  {
+    id: 'jellyfish_sting',
+    title: 'צריבת מדוזה',
+    icon: '🪼',
+    category: 'injury',
+    shortDesc: 'טיפול בצריבה ממדוזה בים.',
+    steps: [
+      'הסרה: הסר שאריות זרועות בעזרת חפץ פלסטיק (כרטיס).',
+      'מי ים: שטוף את המקום במי ים בלבד.',
+      'מים חמים: טבול במים חמים (45 מעלות) לשיכוך כאב.',
+      'מניעת שפשוף: אל תשפשף את האזור.'
+    ],
+    tips: ['מים מתוקים מפוצצים את תאי הארס - הימנע מהם!', 'חומץ עוזר רק במינים מסוימים.'],
+    visuals: {
+      type: 'icon-list',
+      title: 'עשה ואל תעשה',
+      items: [
+        { label: 'רק מי ים לשטיפה', icon: '🌊' },
+        { label: 'מים חמים לכאב', icon: '🔥' },
+        { label: 'לא מים מתוקים', icon: '🚫' }
+      ]
+    }
+  },
+  {
+    id: 'spider_scorpion',
+    title: 'עקיצת עכביש או עקרב',
+    icon: '🦂',
+    category: 'urgent',
+    shortDesc: 'טיפול בחשד לעקיצת עקרב או עכביש ארסי.',
+    steps: [
+      'מנוחה: השכב את הנפגע ומנע תזוזה.',
+      'קיבוע: קבע את האיבר הפגוע.',
+      'קירור: הנח קומפרס קר להקלת הכאב.',
+      'פינוי: פנה מייד לבית חולים.'
+    ],
+    tips: ['אל תמצוץ ארס.', 'אל תבצע חתכים.', 'עקרב צהוב נחשב למסוכן ביותר בישראל.'],
+    visuals: {
+      type: 'icon-list',
+      title: 'דגשי עקיצה',
+      items: [
+        { label: 'מנוחה מוחלטת', icon: '🛌' },
+        { label: 'קירור המקום', icon: '🧊' },
+        { label: 'פינוי דחוף', icon: '🚑' }
+      ]
+    }
+  },
+  {
+    id: 'fainting',
+    title: 'עילפון',
+    icon: '🧘',
+    category: 'general',
+    shortDesc: 'טיפול באדם שאיבד הכרה לזמן קצר.',
+    steps: [
+      'השכבה: על הגב במקום מוצל ומאוורר.',
+      'הגבהה: רגליים למעלה (כ-30 ס"מ).',
+      'אוורור: שחרר בגדים לוחצים (עניבה, חגורה).',
+      'מנוחה: תן לנפגע להתאושש לאט.'
+    ],
+    tips: ['אל תשפוך מים על הפנים.', 'בדוק אם יש פציעות נפילה.'],
+    visuals: {
+      type: 'icon-list',
+      title: 'שלבי התאוששות',
+      items: [
+        { label: 'הגבהת רגליים', icon: '🦶' },
+        { label: 'שחרור בגדים לוחצים', icon: '👔' },
+        { label: 'מנוחה סטטית', icon: '🛋️' }
       ]
     }
   }
