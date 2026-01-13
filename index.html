@@ -7,35 +7,29 @@
     <meta name="theme-color" content="#dc2626" />
     <meta name="description" content="מדריך עזרה ראשונה אינטראקטיבי להצלת חיים בכל מצב - נגיש, מהיר ומקצועי." />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚑</text></svg>">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0274741291001288" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              heebo: ['Heebo', 'sans-serif'],
+            },
+            colors: {
+              urgent: '#dc2626',
+            }
+          }
+        }
+      }
+    </script>
     <style>
       body {
         font-family: 'Heebo', sans-serif;
-      }
-      @keyframes float {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-8px) rotate(2deg); }
-      }
-      .animate-float {
-        animation: float 4s ease-in-out infinite;
-      }
-      @keyframes wiggle {
-        0%, 100% { transform: rotate(-5deg); }
-        50% { transform: rotate(5deg); }
-      }
-      .animate-wiggle {
-        animation: wiggle 0.5s ease-in-out infinite;
-      }
-      @keyframes slideUp {
-        from { transform: translateY(100%); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-      }
-      .animate-toast {
-        animation: slideUp 0.3s ease-out;
+        transition: background-color 0.3s ease, color 0.3s ease;
       }
       .no-scrollbar::-webkit-scrollbar {
         display: none;
@@ -45,28 +39,31 @@
         scrollbar-width: none;
       }
       .glass {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
       }
-      .dark .glass {
-        background: rgba(15, 23, 42, 0.6);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+      .card-transition {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      @keyframes slideUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      .animate-slide-up {
+        animation: slideUp 0.4s ease-out forwards;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
-  }
-}
-</script>
-</head>
-  <body class="bg-gray-50 text-gray-900 transition-colors duration-500">
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
     <div id="root"></div>
   </body>
 </html>
