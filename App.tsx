@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import EmergencyBar from './components/EmergencyBar';
 import { PROCEDURES, EMERGENCY_NUMBERS, UI_TRANSLATIONS } from './constants';
@@ -98,7 +97,6 @@ const App: React.FC = () => {
     if (data) setSearchTerm(data);
   };
 
-  /* Renamed exportSearch to exportData to fix the error on line 182 */
   const exportData = () => {
     const data = activeTab === 'procedures' ? filteredProcedures : filteredNumbers;
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
