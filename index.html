@@ -1,58 +1,43 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>עזרה ראשונה - מדריך מציל חיים</title>
-    <meta name="theme-color" content="#dc2626" />
+    <meta name="theme-color" content="#0f172a" />
     <meta name="description" content="מדריך עזרה ראשונה אינטראקטיבי להצלת חיים בכל מצב - נגיש, מהיר ומקצועי." />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚑</text></svg>">
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind 4 Browser Script (No production warning, faster JIT) -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              heebo: ['Heebo', 'sans-serif'],
-            },
-            colors: {
-              urgent: '#dc2626',
-            }
-          }
+    
+    <style type="text/tailwindcss">
+      @theme {
+        --font-heebo: "Heebo", sans-serif;
+        --color-urgent: #ef4444;
+        --color-brand-dark: #0f172a;
+      }
+      
+      @layer base {
+        body {
+          @apply font-heebo antialiased transition-colors duration-300;
         }
       }
-    </script>
-    <style>
-      body {
-        font-family: 'Heebo', sans-serif;
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      .glass {
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-      }
-      .card-transition {
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
-      @keyframes slideUp {
-        from { transform: translateY(20px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-      }
-      .animate-slide-up {
-        animation: slideUp 0.4s ease-out forwards;
+
+      @layer components {
+        .glass {
+          @apply backdrop-blur-xl bg-white/10 border border-white/10 dark:bg-slate-900/40 dark:border-slate-800/50;
+        }
+        .card-glow {
+          @apply hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300;
+        }
       }
     </style>
+
     <script type="importmap">
     {
       "imports": {
@@ -63,7 +48,7 @@
     }
     </script>
   </head>
-  <body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
     <div id="root"></div>
   </body>
 </html>
