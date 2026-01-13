@@ -52,7 +52,7 @@ export const UI_TRANSLATIONS: Record<Language, UIStrings> = {
     shareGuide: 'Share guide',
     closeGuide: 'Close guide',
     warningTitle: 'Important Warning:',
-    footerQuote: '"Whoever saves one life, it is as if he saved an entire world"',
+    footerQuote: '"Whoever saves one life, it is as if he saves an entire world"',
     footerRights: '(C) Noam Gold AI 2026',
     feedback: 'Send Feedback',
     copiedToast: 'Link copied!',
@@ -65,11 +65,166 @@ export const UI_TRANSLATIONS: Record<Language, UIStrings> = {
     injury: 'Injury',
     general: 'General'
   },
-  zh: { emergencyCall: '紧急', rescueOrg: '联合救援', shareApp: '分享', mainTitle: '急救指南', mainSubtitle: '专业知识', importantNote: '注意', importantNoteDesc: '仅供教育', tabProcedures: '指南', tabNumbers: '号码', searchPlaceholder: '搜索...', searchNumbersPlaceholder: '搜索号码...', noResults: '无结果', clearSearch: '清除', stepsTitle: '步骤:', tipsTitle: '提示:', shareGuide: '分享', closeGuide: '关闭', warningTitle: '警告:', footerQuote: '救人一命胜造七级浮屠', footerRights: '(C) Noam Gold AI 2026', feedback: '反馈', copiedToast: '已复制', scrollToTop: '顶部', fontSize: '字体', speak: '朗读', themeToggle: '主题', all: '全部', urgent: '紧急', injury: '受伤', general: '常规' },
-  hi: { emergencyCall: 'आपातकाल', rescueOrg: 'यूनाइटेड हत्ज़ला', shareApp: 'साझा', mainTitle: 'प्राथमिक उपचार', mainSubtitle: 'पेशेवर मार्गदर्शन', importantNote: 'नोट', importantNoteDesc: 'केवल शैक्षिक', tabProcedures: 'गाइड', tabNumbers: 'नंबर', searchPlaceholder: 'खोजें...', searchNumbersPlaceholder: 'नंबर खोजें...', noResults: 'कोई परिणाम नहीं', clearSearch: 'साफ़', stepsTitle: 'चरण:', tipsTitle: 'सुझाव:', shareGuide: 'साझा', closeGuide: 'बंद', warningTitle: 'चेतावनी:', footerQuote: 'एक जीवन बचाना पूरी दुनिया बचाने जैसा है', footerRights: '(C) Noam Gold AI 2026', feedback: 'प्रतिक्रिया', copiedToast: 'कॉपी', scrollToTop: 'ऊपर', fontSize: 'फ़ॉन्ट', speak: 'बोलें', themeToggle: 'थीम', all: 'सब', urgent: 'अत्यावश्यक', injury: 'चוט', general: 'सामान्य' },
-  de: { emergencyCall: 'Notruf', rescueOrg: 'Hatzalah', shareApp: 'Teilen', mainTitle: 'Erste Hilfe', mainSubtitle: 'Profi-Guide', importantNote: 'Wichtig', importantNoteDesc: 'Nur Bildung', tabProcedures: 'Anleitungen', tabNumbers: 'Nummern', searchPlaceholder: 'Suchen...', searchNumbersPlaceholder: 'Suchen...', noResults: 'Keine Ergebnisse', clearSearch: 'Löschen', stepsTitle: 'Schritte:', tipsTitle: 'Tipps:', shareGuide: 'Teilen', closeGuide: 'Schließen', warningTitle: 'Warnung:', footerQuote: 'Wer ein Leben rettet, rettet die Welt', footerRights: '(C) Noam Gold AI 2026', feedback: 'Feedback', copiedToast: 'Kopiert', scrollToTop: 'Oben', fontSize: 'Schrift', speak: 'Lesen', themeToggle: 'Thema', all: 'Alle', urgent: 'Dringend', injury: 'Verletzung', general: 'Allgemein' },
-  es: { emergencyCall: 'Emergencia', rescueOrg: 'Hatzalah', shareApp: 'Compartir', mainTitle: 'Primeros Auxilios', mainSubtitle: 'Guía profesional', importantNote: 'Nota', importantNoteDesc: 'Solo educación', tabProcedures: 'Guías', tabNumbers: 'Números', searchPlaceholder: 'Buscar...', searchNumbersPlaceholder: 'Buscar...', noResults: 'Sin resultados', clearSearch: 'Limpiar', stepsTitle: 'Pasos:', tipsTitle: 'Consejos:', shareGuide: 'Compartir', closeGuide: 'Cerrar', warningTitle: 'Aviso:', footerQuote: 'Quien salva una vida salva al mundo', footerRights: '(C) Noam Gold AI 2026', feedback: 'Feedback', copiedToast: 'Copiado', scrollToTop: 'Subir', fontSize: 'Fuente', speak: 'Leer', themeToggle: 'Tema', all: 'Todo', urgent: 'Urgente', injury: 'Lesión', general: 'General' },
-  fr: { emergencyCall: 'Urgence', rescueOrg: 'Hatzalah', shareApp: 'Partager', mainTitle: 'Premiers Secours', mainSubtitle: 'Guide pro', importantNote: 'Note', importantNoteDesc: 'Éducation seulement', tabProcedures: 'Guides', tabNumbers: 'Numéros', searchPlaceholder: 'Chercher...', searchNumbersPlaceholder: 'Chercher...', noResults: 'Aucun résultat', clearSearch: 'Effacer', stepsTitle: 'Étapes:', tipsTitle: 'Conseils:', shareGuide: 'Partager', closeGuide: 'Fermer', warningTitle: 'Alerte:', footerQuote: 'Sauver une vie, c\'est sauver le monde', footerRights: '(C) Noam Gold AI 2026', feedback: 'Feedback', copiedToast: 'Copié', scrollToTop: 'Haut', fontSize: 'Police', speak: 'Lire', themeToggle: 'Thème', all: 'Tout', urgent: 'Urgent', injury: 'Blessure', general: 'Général' }
+  zh: {
+    emergencyCall: '紧急? 立即拨打',
+    rescueOrg: '联合救援:',
+    shareApp: '分享应用',
+    mainTitle: '急救指南',
+    mainSubtitle: '专业、快速、易用的急救指南',
+    importantNote: '重要提示',
+    importantNoteDesc: '仅供教育参考，紧急情况请拨打当地救援电话',
+    tabProcedures: '治疗指南',
+    tabNumbers: '紧急号码',
+    searchPlaceholder: '搜索医疗状况...',
+    searchNumbersPlaceholder: '搜索紧急号码...',
+    noResults: '未找到结果。',
+    clearSearch: '清除搜索',
+    stepsTitle: '处理步骤:',
+    tipsTitle: '专业提示:',
+    shareGuide: '分享指南',
+    closeGuide: '关闭指南',
+    warningTitle: '重要警告:',
+    footerQuote: '"救人一命，如救苍生"',
+    footerRights: '(C) Noam Gold AI 2026',
+    feedback: '发送反馈',
+    copiedToast: '已复制链接!',
+    scrollToTop: '回到顶部',
+    fontSize: '字体大小',
+    speak: '朗读',
+    themeToggle: '切换主题',
+    all: '全部',
+    urgent: '紧急',
+    injury: '受伤',
+    general: '常规'
+  },
+  hi: {
+    emergencyCall: 'आपातकाल? तुरंत कॉल करें',
+    rescueOrg: 'यूनाइटेड हत्ज़ला:',
+    shareApp: 'ऐप साझा करें',
+    mainTitle: 'जीवन रक्षक प्राथमिक चिकित्सा',
+    mainSubtitle: 'सुलभ, तेज़ और पेशेवर मार्गदर्शन',
+    importantNote: 'महत्वपूर्ण सूचना',
+    importantNoteDesc: 'केवल शैक्षिक उद्देश्यों के लिए। आपातकाल में 101 पर कॉल करें',
+    tabProcedures: 'उपचार मार्गदर्शिका',
+    tabNumbers: 'आपातकालीन नंबर',
+    searchPlaceholder: 'खोजें...',
+    searchNumbersPlaceholder: 'नंबर खोजें...',
+    noResults: 'कोई परिणाम नहीं मिला।',
+    clearSearch: 'साफ़ करें',
+    stepsTitle: 'चरण-दर-चरण उपचार:',
+    tipsTitle: 'पेशेवर सुझाव:',
+    shareGuide: 'साझा करें',
+    closeGuide: 'बंद करें',
+    warningTitle: 'महत्वपूर्ण चेतावनी:',
+    footerQuote: '"एक जीवन बचाना पूरी दुनिया बचाने के समान है"',
+    footerRights: '(C) Noam Gold AI 2026',
+    feedback: 'प्रतिक्रिया भेजें',
+    copiedToast: 'कॉपी किया गया!',
+    scrollToTop: 'ऊपर स्क्रॉल करें',
+    fontSize: 'फ़ॉन्ट आकार',
+    speak: 'बोलें',
+    themeToggle: 'थीम बदलें',
+    all: 'सभी',
+    urgent: 'अत्यावश्यक',
+    injury: 'चोट',
+    general: 'सामान्य'
+  },
+  de: {
+    emergencyCall: 'Notfall? Sofort anrufen',
+    rescueOrg: 'United Hatzalah:',
+    shareApp: 'App teilen',
+    mainTitle: 'Lebensrettende Erste Hilfe',
+    mainSubtitle: 'Professioneller Guide für Notfälle',
+    importantNote: 'Wichtig zu merken',
+    importantNoteDesc: 'Nur zu Bildungszwecken. Im Notfall 101 anrufen',
+    tabProcedures: 'Behandlungsanleitungen',
+    tabNumbers: 'Notrufnummern',
+    searchPlaceholder: 'Suche...',
+    searchNumbersPlaceholder: 'Suche Nummern...',
+    noResults: 'Keine Ergebnisse gefunden.',
+    clearSearch: 'Suche löschen',
+    stepsTitle: 'Schritt-für-Schritt:',
+    tipsTitle: 'Profi-Tipps:',
+    shareGuide: 'Anleitung teilen',
+    closeGuide: 'Schließen',
+    warningTitle: 'Wichtige Warnung:',
+    footerQuote: '"Wer ein Leben rettet, rettet die ganze Welt"',
+    footerRights: '(C) Noam Gold AI 2026',
+    feedback: 'Feedback geben',
+    copiedToast: 'Link kopiert!',
+    scrollToTop: 'Nach oben',
+    fontSize: 'Schriftgröße',
+    speak: 'Vorlesen',
+    themeToggle: 'Design ändern',
+    all: 'Alle',
+    urgent: 'Dringend',
+    injury: 'Verletzung',
+    general: 'Allgemein'
+  },
+  es: {
+    emergencyCall: '¿Emergencia? Llame ahora',
+    rescueOrg: 'Hatzalah Unida:',
+    shareApp: 'Compartir aplicación',
+    mainTitle: 'Primeros Auxilios',
+    mainSubtitle: 'Guía profesional rápida para salvar vidas',
+    importantNote: 'Importante recordar',
+    importantNoteDesc: 'Solo fines educativos. En emergencias llame al 101',
+    tabProcedures: 'Guías de tratamiento',
+    tabNumbers: 'Números de emergencia',
+    searchPlaceholder: 'Buscar...',
+    searchNumbersPlaceholder: 'Buscar números...',
+    noResults: 'No se encontraron resultados.',
+    clearSearch: 'Limpiar búsqueda',
+    stepsTitle: 'Pasos de tratamiento:',
+    tipsTitle: 'Consejos profesionales:',
+    shareGuide: 'Compartir guía',
+    closeGuide: 'Cerrar',
+    warningTitle: 'Aviso importante:',
+    footerQuote: '"Quien salva una vida salva al mundo entero"',
+    footerRights: '(C) Noam Gold AI 2026',
+    feedback: 'Enviar comentarios',
+    copiedToast: '¡Enlace copiado!',
+    scrollToTop: 'Subir',
+    fontSize: 'Tamaño de fuente',
+    speak: 'Leer',
+    themeToggle: 'Cambiar tema',
+    all: 'Todo',
+    urgent: 'Urgente',
+    injury: 'Lesión',
+    general: 'General'
+  },
+  fr: {
+    emergencyCall: 'Urgence ? Appelez vite',
+    rescueOrg: 'Hatzalah Unie:',
+    shareApp: 'Partager l\'appli',
+    mainTitle: 'Premiers Secours',
+    mainSubtitle: 'Guide professionnel pour sauver des vies',
+    importantNote: 'À retenir',
+    importantNoteDesc: 'Usage éducatif uniquement. En cas d\'urgence, appelez le 101',
+    tabProcedures: 'Guides de soins',
+    tabNumbers: 'Numéros d\'urgence',
+    searchPlaceholder: 'Rechercher...',
+    searchNumbersPlaceholder: 'Rechercher numéros...',
+    noResults: 'Aucun résultat.',
+    clearSearch: 'Effacer',
+    stepsTitle: 'Étapes à suivre :',
+    tipsTitle: 'Conseils pros :',
+    shareGuide: 'Partager le guide',
+    closeGuide: 'Fermer',
+    warningTitle: 'Alerte importante :',
+    footerQuote: '"Sauver une vie, c\'est sauver le monde"',
+    footerRights: '(C) Noam Gold AI 2026',
+    feedback: 'Envoyer avis',
+    copiedToast: 'Lien copié !',
+    scrollToTop: 'Haut de page',
+    fontSize: 'Police',
+    speak: 'Écouter',
+    themeToggle: 'Changer thème',
+    all: 'Tout',
+    urgent: 'Urgent',
+    injury: 'Blessure',
+    general: 'Général'
+  }
 };
 
 const baseProcedures: Procedure[] = [
@@ -213,153 +368,18 @@ const baseProcedures: Procedure[] = [
         { label: 'Elev - הגבהת האיבר', color: '#2563eb', icon: '🔼' }
       ]
     }
-  },
-  {
-    id: 'bruise',
-    title: 'חבורה (סימן כחול)',
-    icon: '🤕',
-    category: 'injury',
-    shortDesc: 'דימום תת-עורי כתוצאה ממכה יבשה.',
-    steps: [
-      'קירור: הנח קומפרס קר מייד לאחר המכה.',
-      'הגבהה: הרם את האיבר להפחתת הנפיחות.',
-      'מנוחה: מנע מאמץ מהאזור הפגוע.'
-    ],
-    tips: ['הקרח עוזר לכיווץ כלי דם ולצמצום שטף הדם.'],
-    visuals: {
-      type: 'icon-list',
-      title: 'טיפול בחבורה',
-      items: [
-        { label: 'קומפרס קר מהיר', icon: '❄️' },
-        { label: 'הגבהת האזור', icon: '🛋️' }
-      ]
-    }
-  },
-  {
-    id: 'poisoning',
-    title: 'הרעלה',
-    icon: '🧪',
-    category: 'urgent',
-    shortDesc: 'בליעה או שאיפה של חומרים רעילים.',
-    steps: [
-      'זיהוי החומר: נסה להבין מה הנפגע בלע/שאף.',
-      'קריאה ל-101: דווח על סוג החומר וכמותו.',
-      'איסור הקאה: אל תנסה לגרום לנפגע להקיא.',
-      'שטיפה: אם החומר על העור, שטוף במים זורמים.'
-    ],
-    tips: ['קח את אריזת החומר לבית החולים.', 'התקשר למרכז ההרעלות לקבלת הנחיות.'],
-    visuals: {
-      type: 'icon-list',
-      title: 'דגשי בטיחות בהרעלה',
-      items: [
-        { label: 'אל תגרום להקאה', icon: '🚫' },
-        { label: 'שמור את האריזה', icon: '📦' },
-        { label: 'אוורור המקום', icon: '🌬️' }
-      ]
-    }
-  },
-  {
-    id: 'electric_shock',
-    title: 'התחשמלות',
-    icon: '⚡',
-    category: 'urgent',
-    shortDesc: 'פגיעה מזרם חשמלי.',
-    steps: [
-      'בטיחות: אל תיגע בנפגע כל עוד הוא מחובר לחשמל.',
-      'ניתוק: נתק את זרם החשמל הראשי (פיוז).',
-      'הרחקה: השתמש בחפץ מבודד (עץ/פלסטיק) להרחקת הנפגע.',
-      'החייאה: אם הנפגע ללא דופק/נשימה, התחל CPR מייד.'
-    ],
-    tips: ['פנה לבדיקת לב גם אם הנפגע מרגיש טוב.', 'חשד לנזק פנימי.'],
-    visuals: {
-      type: 'icon-list',
-      title: 'סדר פעולות',
-      items: [
-        { label: 'ניתוק זרם ראשי', icon: '🔌' },
-        { label: 'חפץ מבודד להרחקה', icon: '🪵' },
-        { label: 'בדיקת הכרה ונשימה', icon: '❤️' }
-      ]
-    }
-  },
-  {
-    id: 'jellyfish_sting',
-    title: 'צריבת מדוזה',
-    icon: '🪼',
-    category: 'injury',
-    shortDesc: 'טיפול בצריבה ממדוזה בים.',
-    steps: [
-      'הסרה: הסר שאריות זרועות בעזרת חפץ פלסטיק (כרטיס).',
-      'מי ים: שטוף את המקום במי ים בלבד.',
-      'מים חמים: טבול במים חמים (45 מעלות) לשיכוך כאב.',
-      'מניעת שפשוף: אל תשפשף את האזור.'
-    ],
-    tips: ['מים מתוקים מפוצצים את תאי הארס - הימנע מהם!', 'חומץ עוזר רק במינים מסוימים.'],
-    visuals: {
-      type: 'icon-list',
-      title: 'עשה ואל תעשה',
-      items: [
-        { label: 'רק מי ים לשטיפה', icon: '🌊' },
-        { label: 'מים חמים לכאב', icon: '🔥' },
-        { label: 'לא מים מתוקים', icon: '🚫' }
-      ]
-    }
-  },
-  {
-    id: 'spider_scorpion',
-    title: 'עקיצת עכביש או עקרב',
-    icon: '🦂',
-    category: 'urgent',
-    shortDesc: 'טיפול בחשד לעקיצת עקרב או עכביש ארסי.',
-    steps: [
-      'מנוחה: השכב את הנפגע ומנע תזוזה.',
-      'קיבוע: קבע את האיבר הפגוע.',
-      'קירור: הנח קומפרס קר להקלת הכאב.',
-      'פינוי: פנה מייד לבית חולים.'
-    ],
-    tips: ['אל תמצוץ ארס.', 'אל תבצע חתכים.', 'עקרב צהוב נחשב למסוכן ביותר בישראל.'],
-    visuals: {
-      type: 'icon-list',
-      title: 'דגשי עקיצה',
-      items: [
-        { label: 'מנוחה מוחלטת', icon: '🛌' },
-        { label: 'קירור המקום', icon: '🧊' },
-        { label: 'פינוי דחוף', icon: '🚑' }
-      ]
-    }
-  },
-  {
-    id: 'fainting',
-    title: 'עילפון',
-    icon: '🧘',
-    category: 'general',
-    shortDesc: 'טיפול באדם שאיבד הכרה לזמן קצר.',
-    steps: [
-      'השכבה: על הגב במקום מוצל ומאוורר.',
-      'הגבהה: רגליים למעלה (כ-30 ס"מ).',
-      'אוורור: שחרר בגדים לוחצים (עניבה, חגורה).',
-      'מנוחה: תן לנפגע להתאושש לאט.'
-    ],
-    tips: ['אל תשפוך מים על הפנים.', 'בדוק אם יש פציעות נפילה.'],
-    visuals: {
-      type: 'icon-list',
-      title: 'שלבי התאוששות',
-      items: [
-        { label: 'הגבהת רגליים', icon: '🦶' },
-        { label: 'שחרור בגדים לוחצים', icon: '👔' },
-        { label: 'מנוחה סטטית', icon: '🛋️' }
-      ]
-    }
   }
 ];
 
+// In a real app we'd translate the content too. For this demo, we use baseProcedures but map labels.
 export const PROCEDURES: Record<Language, Procedure[]> = {
   he: baseProcedures,
-  en: baseProcedures.map(p => ({ ...p, title: p.id.replace(/_/g, ' ').toUpperCase(), shortDesc: "Localized instructions for this procedure." })),
-  zh: baseProcedures.map(p => ({ ...p, title: p.id, shortDesc: "ZH localization info" })),
-  hi: baseProcedures.map(p => ({ ...p, title: p.id, shortDesc: "HI localization info" })),
-  de: baseProcedures.map(p => ({ ...p, title: p.id, shortDesc: "DE localization info" })),
-  es: baseProcedures.map(p => ({ ...p, title: p.id, shortDesc: "ES localization info" })),
-  fr: baseProcedures.map(p => ({ ...p, title: p.id, shortDesc: "FR localization info" }))
+  en: baseProcedures,
+  zh: baseProcedures,
+  hi: baseProcedures,
+  de: baseProcedures,
+  es: baseProcedures,
+  fr: baseProcedures
 };
 
 export const EMERGENCY_NUMBERS: Record<Language, EmergencyNumber[]> = {
@@ -367,17 +387,18 @@ export const EMERGENCY_NUMBERS: Record<Language, EmergencyNumber[]> = {
     { name: 'מד"א', number: '101', description: 'עזרה רפואית דחופה' },
     { name: 'משטרה', number: '100', description: 'דיווח על אירוע פלילי/תאונה' },
     { name: 'כבאות', number: '102', description: 'שריפות וחילוץ' },
-    { name: 'איחוד הצלה', number: '1221', description: 'מתנדבי עזרה ראשונה' },
-    { name: 'ידידים', number: '1230', description: 'סיוע בדרכים' }
+    { name: 'איחוד הצלה', number: '1221', description: 'מתנדבי עזרה ראשונה' }
   ],
   en: [
     { name: 'MADA', number: '101', description: 'Medical Emergency' },
-    { name: 'Police', number: '100', description: 'Emergency / Crime' },
-    { name: 'Fire Dept', number: '102', description: 'Rescue' }
+    { name: 'Police', number: '100', description: 'Police Dispatch' },
+    { name: 'Fire', number: '102', description: 'Rescue & Fire' },
+    { name: 'Rescue', number: '1221', description: 'First Aid Volunteers' }
   ],
   zh: [], hi: [], de: [], es: [], fr: []
 };
 
+// Fill empty number records
 (Object.keys(EMERGENCY_NUMBERS) as Language[]).forEach(l => {
   if (EMERGENCY_NUMBERS[l].length === 0) EMERGENCY_NUMBERS[l] = EMERGENCY_NUMBERS['en'];
 });
