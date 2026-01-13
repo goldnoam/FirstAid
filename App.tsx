@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useEffect } from 'react';
 import EmergencyBar from './components/EmergencyBar';
 import { PROCEDURES, EMERGENCY_NUMBERS, UI_TRANSLATIONS } from './constants';
@@ -21,6 +20,7 @@ const App: React.FC = () => {
   });
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem('firstAid_darkMode');
+    // Dark theme by default
     return saved === null ? true : saved === 'true';
   });
 
@@ -249,7 +249,8 @@ const App: React.FC = () => {
             {filteredProcedures.length > 0 ? filteredProcedures.map((p) => {
               const isExpanded = expandedId === p.id;
               const isUrgent = p.category === 'urgent';
-              const parallaxOffset = isExpanded ? (scrollPosition * 0.04) % 20 : 0;
+              // Subtle parallax factor based on scroll
+              const parallaxOffset = isExpanded ? (scrollPosition * 0.04) % 25 : 0;
               
               return (
                 <article
@@ -258,8 +259,8 @@ const App: React.FC = () => {
                   className={`group relative rounded-[3rem] overflow-hidden transition-all duration-500 border-2 ${isExpanded ? 'col-span-full shadow-3xl ring-8 ring-blue-500/5' : 'hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.015]'} ${isUrgent ? 'border-red-500/30' : 'border-blue-500/15'} ${isDarkMode ? 'bg-slate-800/90 backdrop-blur-md' : 'bg-white shadow-xl shadow-slate-200'}`}
                 >
                   <div className={`flex flex-col gap-3 p-4 absolute top-4 ${dir === 'rtl' ? 'left-4' : 'right-4'} z-10 pointer-events-none transition-opacity duration-300 ${isExpanded ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
-                    <button onClick={(e) => { e.stopPropagation(); speak(`${p.title}. ${p.shortDesc}`); }} className="p-4 rounded-2xl bg-blue-500 text-white hover:bg-blue-400 transition-all pointer-events-auto active:scale-90 shadow-lg">🔊</button>
-                    <button onClick={(e) => { e.stopPropagation(); handleShare(p.shortDesc, p.title); }} className="p-4 rounded-2xl bg-emerald-500 text-white hover:bg-emerald-400 transition-all pointer-events-auto active:scale-90 shadow-lg">🔗</button>
+                    <button onClick={(e) => { e.stopPropagation(); speak(`${p.title}. ${p.shortDesc}`); }} className="p-4 rounded-2xl bg-blue-500 text-white hover:bg-blue-400 transition-all pointer-events-auto active:scale-90 shadow-lg" aria-label={ui.speak}>🔊</button>
+                    <button onClick={(e) => { e.stopPropagation(); handleShare(p.shortDesc, p.title); }} className="p-4 rounded-2xl bg-emerald-500 text-white hover:bg-emerald-400 transition-all pointer-events-auto active:scale-90 shadow-lg" aria-label={ui.shareGuide}>🔗</button>
                   </div>
 
                   <button
@@ -282,13 +283,13 @@ const App: React.FC = () => {
                       
                       {p.visuals && (
                         <div 
-                          className="bg-slate-500/5 p-10 rounded-[3rem] border border-slate-500/10 shadow-inner"
+                          className="bg-slate-500/5 p-10 rounded-[3rem] border border-slate-500/10 shadow-inner parallax-visual"
                           style={{ transform: `translateY(${parallaxOffset}px)` }}
                         >
                           <h4 className="font-black text-3xl mb-8 flex items-center gap-3">🎨 {p.visuals.title}</h4>
                           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {p.visuals.items.map((item, i) => (
-                              <div key={i} className="bg-white dark:bg-slate-700/60 p-6 rounded-3xl shadow-lg border border-slate-500/10 flex flex-col items-center justify-center gap-4 group/item hover:scale-105 transition-all text-center">
+                              <div key={i} className="bg-white dark:bg-slate-700/70 p-6 rounded-3xl shadow-lg border border-slate-500/10 flex flex-col items-center justify-center gap-4 group/item hover:scale-105 transition-all text-center">
                                 <span className="text-6xl group-hover/item:animate-wiggle">{item.icon || '📍'}</span>
                                 <span className="font-black text-xl leading-tight">{item.label}</span>
                                 {item.color && <div className="w-full h-3 rounded-full shadow-inner border border-white/10" style={{backgroundColor: item.color}} />}
@@ -360,6 +361,7 @@ const App: React.FC = () => {
         className={`fixed bottom-10 z-50 bg-blue-900 text-white p-6 rounded-full shadow-3xl transition-all duration-300 transform ${dir === 'rtl' ? 'right-10' : 'left-10'} ${
           showScrollTop ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-28 opacity-0 scale-50 pointer-events-none'
         } hover:bg-blue-800 active:scale-90 hover:shadow-blue-500/30`}
+        aria-label={ui.scrollToTop}
       >
         <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={5} d="M5 15l7-7 7 7" /></svg>
       </button>
