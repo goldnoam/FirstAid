@@ -158,12 +158,12 @@ const baseProcedures: Procedure[] = [
     ],
     tips: ['נסה לתעד את פרטי בעלי החיים.'],
     visuals: {
-      type: 'icon-list',
-      title: 'פעולות חובה בנשיכה',
+      type: 'diagram',
+      title: 'שלבי טיפול ראשוני בנשיכה',
       items: [
-        { label: 'שטיפה 15 דק\' במים וסבון', icon: '🚿' },
-        { label: 'לחץ ישיר במידה ומדמם', icon: '🖐️' },
-        { label: 'פינוי רפואי דחוף', icon: '🏥' }
+        { label: 'ניקוי יסודי במים וסבון', icon: '🚿', color: '#3b82f6' },
+        { label: 'עצירת דימום בלחץ ישיר', icon: '🩹', color: '#ef4444' },
+        { label: 'פנייה דחופה לטיפול רפואי', icon: '🏥', color: '#10b981' }
       ]
     }
   },
