@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import EmergencyBar from './components/EmergencyBar';
-import { PROCEDURES, EMERGENCY_NUMBERS, UI_TRANSLATIONS } from './constants';
-import { Procedure, Language } from './types';
+import EmergencyBar from './components/EmergencyBar.tsx';
+import { PROCEDURES, EMERGENCY_NUMBERS, UI_TRANSLATIONS } from './constants.tsx';
+import { Procedure, Language } from './types.ts';
 
 const App: React.FC = () => {
   // 1. Theme state - Default to Dark
